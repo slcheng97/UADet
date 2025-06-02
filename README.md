@@ -51,20 +51,20 @@ We report the results on VOC and VOC-COCO-20, and provide pretrained models. Ple
 * **Faster R-CNN**
 
 
-| Method  | backbone | mAP<sub>&uarr;</sub>(VOC) | WI<sub>&darr;</sub> | AOSE<sub>&darr;</sub> | mAP<sub>&uarr;</sub> | U-AP<sub>&uarr;</sub> | U-Recall<sub>&uarr;</sub> |
-|---------|:--------:|:-------------------------:|:-------------------:|:---------------------:|:--------------------:|:---------------------:|:------------------------:|
-| FR-CNN  | R-50     | 80.06                     | 19.50               | 16518                 | 58.36                | 0                     | 0                        |
-| PROSER  | R-50     | 79.42                     | 20.44               | 14266                 | 56.72                | 16.99                 | 37.34                    |
-| ORE     | R-50     | 79.80                     | 18.18               | 12811                 | 58.25                | 2.60                  | -                        |
-| DS      | R-50     | 79.70                     | 16.76               | 13062                 | 58.46                | 8.75                  | 19.80                    |
-| OpenDet | R-50     | 80.02                     | 12.50               | 10758                 | 58.64                | 14.38                 | 37.65                    |
-| UAdet   | R-50     | 80.13                     | 13.19               | 10186                 | 59.12                | 15.09                 | 59.03                    |
+| Method  | backbone | mAP<sub>&uarr;</sub>(VOC) | WI<sub>&darr;</sub> | AOSE<sub>&darr;</sub> | mAP<sub>&uarr;</sub> | U-AP<sub>&uarr;</sub> | U-Recall<sub>&uarr;</sub> | Download |
+|---------|:--------:|:-------------------------:|:-------------------:|:---------------------:|:--------------------:|:---------------------:|:------------------------:|:--------:|
+| FR-CNN  | R-50     | 80.06                     | 19.50               | 16518                 | 58.36                | 0                     | 0                        | [config](configs/faster_rcnn_R_50_FPN_3x_baseline.yaml) [model](https://drive.google.com/drive/folders/10uFOLLCK4N8te08-C-olRyDV-cJ-L6lU?usp=sharing) |
+| PROSER  | R-50     | 79.42                     | 20.44               | 14266                 | 56.72                | 16.99                 | 37.34                    | [config](configs/faster_rcnn_R_50_FPN_3x_proser.yaml) [model](https://drive.google.com/drive/folders/1_L85gisyvDtBXPe2UbI49vrd5FoBIOI_?usp=sharing) |
+| ORE     | R-50     | 79.80                     | 18.18               | 12811                 | 58.25                | 2.60                  | -                        | [config]() [model]() |
+| DS      | R-50     | 79.70                     | 16.76               | 13062                 | 58.46                | 8.75                  | 19.80                    | [config](configs/faster_rcnn_R_50_FPN_3x_ds.yaml) [model](https://drive.google.com/drive/folders/1OWDjL29E2H-_lSApXqM2r8PS7ZvUNtiv?usp=sharing) |
+| OpenDet | R-50     | 80.02                     | 12.50               | 10758                 | 58.64                | 14.38                 | 37.65                    | [config](configs/faster_rcnn_R_50_FPN_3x_opendet.yaml) [model](https://drive.google.com/drive/folders/1fzD0iJ6lJrPL4ffByeO9M-udckbYqIxY?usp=sharing) |
+| UAdet   | R-50     | 80.13                     | 13.19               | 10186                 | 59.12                | 15.09                 | 59.03                    | [config](configs/faster_rcnn_R_50_FPN_3x_uadet.yaml) [model](https://drive.google.com/drive/folders/uadet_models) |
 
 ### Train and Test
 
 * **Testing**
 
-First, you need to download pretrained weights in the model zoo, e.g., [UADet](https://drive.google.com/file/d/1UKsSpo6gfM4NwnbGET60RkkjF_L5mwzN/view?usp=drive_link).
+First, you need to download pretrained weights in the model zoo, e.g., [UADet](https://drive.google.com/file/d/1UKsSpo6gfM4NwnbGET60RkkjF_L5mwzN/view?usp=sharing).
 
 Then, run the following command:
 ```
