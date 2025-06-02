@@ -75,7 +75,7 @@ We report the results on VOC and VOC-COCO-20, and provide pretrained models. Ple
       <td style="border: 1px solid #ddd; padding: 3px 5px;">58.36</td>
       <td style="border: 1px solid #ddd; padding: 3px 5px;">0</td>
       <td style="border: 1px solid #ddd; padding: 3px 5px;">0</td>
-      <td style="border: 1px solid #ddd; padding: 3px 5px; white-space: nowrap;"><a href="configs/faster_rcnn_R_50_FPN_3x_baseline.yaml">config</a> <a href="https://drive.google.com/drive/folders/10uFOLLCK4N8te08-C-olRyDV-cJ-L6lU?usp=sharing">model</a></td>
+      <td style="border: 1px solid #ddd; padding: 3px 5px; white-space: nowrap;"><a href="configs/faster_rcnn_R_50_FPN_3x_baseline.yaml">config</a> <a href="https://drive.google.com/drive/folders/1zpTziYBdoe0Aw9hK342aptZnsaDlB9ov?usp=sharing">model</a></td>
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 3px 5px;">PROSER</td>
@@ -86,18 +86,7 @@ We report the results on VOC and VOC-COCO-20, and provide pretrained models. Ple
       <td style="border: 1px solid #ddd; padding: 3px 5px;">56.72</td>
       <td style="border: 1px solid #ddd; padding: 3px 5px;">16.99</td>
       <td style="border: 1px solid #ddd; padding: 3px 5px;">37.34</td>
-      <td style="border: 1px solid #ddd; padding: 3px 5px; white-space: nowrap;"><a href="configs/faster_rcnn_R_50_FPN_3x_proser.yaml">config</a> <a href="https://drive.google.com/drive/folders/1_L85gisyvDtBXPe2UbI49vrd5FoBIOI_?usp=sharing">model</a></td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 3px 5px;">ORE</td>
-      <td style="border: 1px solid #ddd; padding: 3px 5px;">R-50</td>
-      <td style="border: 1px solid #ddd; padding: 3px 5px;">79.80</td>
-      <td style="border: 1px solid #ddd; padding: 3px 5px;">18.18</td>
-      <td style="border: 1px solid #ddd; padding: 3px 5px;">12811</td>
-      <td style="border: 1px solid #ddd; padding: 3px 5px;">58.25</td>
-      <td style="border: 1px solid #ddd; padding: 3px 5px;">2.60</td>
-      <td style="border: 1px solid #ddd; padding: 3px 5px;">-</td>
-      <td style="border: 1px solid #ddd; padding: 3px 5px; white-space: nowrap;"><a href="#">config</a> <a href="#">model</a></td>
+      <td style="border: 1px solid #ddd; padding: 3px 5px; white-space: nowrap;"><a href="configs/faster_rcnn_R_50_FPN_3x_proser.yaml">config</a> <a href="https://drive.google.com/drive/folders/12X43aWZ7L0vqp1VjM2x5mF1RAd3vyHil?usp=sharing">model</a></td>
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 3px 5px;">DS</td>
@@ -108,7 +97,7 @@ We report the results on VOC and VOC-COCO-20, and provide pretrained models. Ple
       <td style="border: 1px solid #ddd; padding: 3px 5px;">58.46</td>
       <td style="border: 1px solid #ddd; padding: 3px 5px;">8.75</td>
       <td style="border: 1px solid #ddd; padding: 3px 5px;">19.80</td>
-      <td style="border: 1px solid #ddd; padding: 3px 5px; white-space: nowrap;"><a href="configs/faster_rcnn_R_50_FPN_3x_ds.yaml">config</a> <a href="https://drive.google.com/drive/folders/1OWDjL29E2H-_lSApXqM2r8PS7ZvUNtiv?usp=sharing">model</a></td>
+      <td style="border: 1px solid #ddd; padding: 3px 5px; white-space: nowrap;"><a href="configs/faster_rcnn_R_50_FPN_3x_ds.yaml">config</a> <a href="https://drive.google.com/drive/folders/1X7RtaSkZnOCLuzY5bCBJ2F3jnvm14Nhq?usp=sharing">model</a></td>
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 3px 5px;">OpenDet</td>
@@ -119,7 +108,7 @@ We report the results on VOC and VOC-COCO-20, and provide pretrained models. Ple
       <td style="border: 1px solid #ddd; padding: 3px 5px;">58.64</td>
       <td style="border: 1px solid #ddd; padding: 3px 5px;">14.38</td>
       <td style="border: 1px solid #ddd; padding: 3px 5px;">37.65</td>
-      <td style="border: 1px solid #ddd; padding: 3px 5px; white-space: nowrap;"><a href="configs/faster_rcnn_R_50_FPN_3x_opendet.yaml">config</a> <a href="https://drive.google.com/drive/folders/1fzD0iJ6lJrPL4ffByeO9M-udckbYqIxY?usp=sharing">model</a></td>
+      <td style="border: 1px solid #ddd; padding: 3px 5px; white-space: nowrap;"><a href="configs/faster_rcnn_R_50_FPN_3x_opendet.yaml">config</a> <a href="https://drive.google.com/drive/folders/1WPA51Sn1mNvZ67kdBolC-_m4TJiS82UT?usp=sharing">model</a></td>
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 3px 5px;">UAdet</td>
@@ -130,7 +119,7 @@ We report the results on VOC and VOC-COCO-20, and provide pretrained models. Ple
       <td style="border: 1px solid #ddd; padding: 3px 5px;">59.12</td>
       <td style="border: 1px solid #ddd; padding: 3px 5px;">15.09</td>
       <td style="border: 1px solid #ddd; padding: 3px 5px;">59.03</td>
-      <td style="border: 1px solid #ddd; padding: 3px 5px; white-space: nowrap;"><a href="configs/faster_rcnn_R_50_FPN_3x_uadet.yaml">config</a> <a href="https://drive.google.com/drive/folders/uadet_models">model</a></td>
+      <td style="border: 1px solid #ddd; padding: 3px 5px; white-space: nowrap;"><a href="configs/faster_rcnn_R_50_FPN_3x_uadet.yaml">config</a> <a href="https://drive.google.com/drive/folders/15b7JAdpKxPFwNZ5EbOh2k9gjZutctIs4?usp=sharing">model</a></td>
     </tr>
   </tbody>
 </table>
