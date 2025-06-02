@@ -1,0 +1,29 @@
+_BASE_: "./Base-RCNN-FPN-OPENDET.yaml"
+MODEL:
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  RESNETS:
+    DEPTH: 50
+#  ROI_HEADS:
+#    BATCH_SIZE_PER_IMAGE: 256
+  ROI_BOX_HEAD:
+    #    OUTPUT_LAYERS: "CosineFastRCNNOutputLayers" # baseline use a simple cosine FRCNN
+    OUTPUT_LAYERS: "OpenDetFastRCNNOutputLayers_Soft"
+DATASETS:
+  TRAIN: ('voc_2007_train', 'voc_2012_trainval')
+  TEST: ('voc_coco_20_40_test', 'voc_2007_test', 'voc_coco_20_60_test', 'voc_coco_20_80_test', 'voc_coco_2500_test', 'voc_coco_5000_test', 'voc_coco_10000_test', 'voc_coco_20000_test')
+SOLVER:
+  BASE_LR: 0.01
+  STEPS: (21000, 29000)
+  MAX_ITER: 32000
+  WARMUP_ITERS: 100
+  AMP:
+    ENABLED: True
+
+# UPLOSS.WEIGHT: former two are 0.5, the last is 1.0
+
+
+# CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/train_net.py --dist-url auto --num-gpus 4 --config-file configs/faster_rcnn_R_50_FPN_3x_opendet.yaml OUTPUT_DIR "./output/v1"
+# CUDA_VISIBLE_DEVICES=4,5,6,7 python tools/train_net.py --dist-url auto --num-gpus 4 --config-file configs/faster_rcnn_R_50_FPN_3x_opendet.yaml OUTPUT_DIR "./output/v2"
+# CUDA_VISIBLE_DEVICES=2,3 python tools/train_net.py --num-gpus 2  --dist-url auto --config-file configs/faster_rcnn_R_50_FPN_3x_opendet.yaml MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE 256 OUTPUT_DIR "./output/UADET_256"
+# CUDA_VISIBLE_DEVICES=4,5 python tools/train_net.py --num-gpus 2 --config-file configs/faster_rcnn_R_50_FPN_3x_opendet.yaml MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE 512 OUTPUT_DIR "./output/UADET_512"
+# CUDA_VISIBLE_DEVICES=0 python tools/train_net.py --num-gpus 1 --config-file configs/faster_rcnn_R_50_FPN_3x_opendet.yaml --eval-only OUTPUT_DIR "./output/SAM_results"
